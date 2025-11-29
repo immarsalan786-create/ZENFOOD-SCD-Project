@@ -29,5 +29,5 @@ App: http://localhost:3000
 - UML/: Mermaid diagrams
 
 ## Placeholder credentials
-admin@example.com / P@ssw0rd!_CHANGE
+immarsalan786@gmail.com / P@ssw0rd!_CHANGE
 
