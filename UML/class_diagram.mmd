@@ -1,0 +1,21 @@
+
+classDiagram
+    MenuComposite "1" --* "many" MenuComponent
+    MenuItem --|> MenuComponent
+    MenuComposite : +add()
+    MenuComposite : +remove()
+    MenuItem : +id
+    MenuItem : +name
+    MenuItem : +price
+
+    OrderManager <|-- Singleton
+    OrderManager : +create(order)
+    OrderManager : +get(id)
+    OrderManager : +update(id, fields)
+
+    PlaceOrderCommand ..> Receiver : executes
+    CancelOrderCommand ..> Receiver
+    UpdateStatusCommand ..> Receiver
+
+    Subject o-- RestaurantObserver
+    Subject o-- DeliveryObserver

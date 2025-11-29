@@ -1,0 +1,56 @@
+{
+  "name": "ZENFOOD MENU",
+  "categories": [
+    {
+      "name": "Pizzas",
+      "items": [
+        {
+          "id": "p1",
+          "name": "Margherita",
+          "price": 8.5,
+          "description": "Cheese & tomato"
+        },
+        {
+          "id": "p2",
+          "name": "Pepperoni",
+          "price": 9.5,
+          "description": "Pepperoni & cheese"
+        }
+      ]
+    },
+    {
+      "name": "Burgers",
+      "items": [
+        {
+          "id": "b1",
+          "name": "Classic Burger",
+          "price": 7.0,
+          "description": "Beef patty"
+        },
+        {
+          "id": "b2",
+          "name": "Veggie Burger",
+          "price": 6.5,
+          "description": "Plant-based patty"
+        }
+      ]
+    },
+    {
+      "name": "Drinks",
+      "items": [
+        {
+          "id": "d1",
+          "name": "Cola",
+          "price": 1.5,
+          "description": "330ml"
+        },
+        {
+          "id": "d2",
+          "name": "Lemonade",
+          "price": 1.5,
+          "description": "Fresh"
+        }
+      ]
+    }
+  ]
+}

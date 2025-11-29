@@ -1,0 +1,19 @@
+
+sequenceDiagram
+    participant UI
+    participant Frontend
+    participant BackendAPI
+    participant Receiver
+    participant OrderManager
+    participant Notifier
+
+    UI->>Frontend: Click place order
+    Frontend->>BackendAPI: POST /api/order
+    BackendAPI->>Receiver: create order
+    Receiver->>OrderManager: create(order)
+    OrderManager-->>Receiver: ok
+    Receiver->>Notifier: notify(order_placed)
+    Notifier->>RestaurantObserver: update()
+    Notifier->>DeliveryObserver: update()
+    BackendAPI-->>Frontend: return orderId
+    Frontend-->>UI: show order id
